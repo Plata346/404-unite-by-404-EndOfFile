@@ -1,5 +1,5 @@
 <head>
-	<title>404 Unite Coaching Map</title>
+	<title>Plata346 Unite Coaching Map</title>
 </head>
 <link rel="stylesheet" href="style.css"/>
 <svg viewBox="0 0 682 125" xmlns="http://www.w3.org/2000/svg" style="position: absolute; pointer-events: none" aria-hidden="true"><defs><clipPath id="timer-clip-path" clipPathUnits="objectBoundingBox" transform="scale(0.00146627566 0.008)"><path d="M6.172 0h669.656a6 6 0 015.905 7.06l-20.273 113a6 6 0 01-5.906 4.94H26.446a6 6 0 01-5.906-4.94L.267 7.06A6 6 0 016.172 0z" fill="#000" fill-rule="evenodd"></path></clipPath></defs></svg>
@@ -9,7 +9,7 @@
 		<div class="timerbtn"><div id="dec-time">-</div><span id="time">10:00</span><div id="inc-time">+</div></div>
 		<div class="resetbtn"></div>
 	</div>
-	<img class="mbg" src="/resources/web/map_fix.png" />
+	<img class="mbg" src="resources/web/map_fix.png" />
 	<div class="map-cont initial" data-time="600">
 		<div class="marker drednaw" style="top: 89%; left: 47%;"></div>
 		<div class="marker rotom" style="top: 5%; left: 47%;"></div>
@@ -114,16 +114,16 @@
 <div class="draggable-container red-side">
 
 </div>
-<a href="https://discord.gg/fNdrwFFeKC" target="_blank"><div class="team"><span>WFG Coaching Map</span></div></a>
-<div class="author"><span>By: 404 / EndOfFile<span></div>
+<div href="" target="_blank"><div class="team"><span>Plata346</span></div></div>
+<div class="author"><span>By: 404/EndOfFile<span></div>
 <script>
 const sides = ["red-side", "blue-side"]
 const pokemon = [
-	["003", "025", "038-a", "282", "658", "700", "724", "815", "845", "884"],
+	["003", "025", "038-a", "282", "658", "700", "724", "815", "845", "884","655","887","196","471"],
 	["009", "080", "143", "473", "558", "709", "820"],
-	["006", "068", "147", "445", "448", "681", "763"],
-	["040", "122", "242", "720", "830"],
-	["094", "807", "663", "359"]
+	["006", "068", "147", "445", "448", "681", "763","794","248","892"],
+	["040", "122", "242", "720", "830","36","302","764"],
+	["094", "807", "663", "359","85","571"]
 ]
 for (let s of sides) {
 	let cont = document.getElementsByClassName("draggable-container " + s)[0]
@@ -133,7 +133,7 @@ for (let s of sides) {
 		for (let num of category) {
 			let mon = document.createElement("div")
 			mon.className = "draggable"
-			mon.style = 'background-image: url("/resources/pokemon/' + num + '.png");'
+			mon.style = 'background-image: url("resources/pokemon/' + num + '.png");'
 			di.appendChild(mon)
 		}
 		cont.appendChild(di)
