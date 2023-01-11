@@ -337,7 +337,7 @@ a {
 		width: 4vh;
 	}
 	.draggable-items {
-		width: calc(8vh + 40px);
+		width: calc(8vh + 50px);
 		min-height: calc(8vh + 9px);
 	}
 }
